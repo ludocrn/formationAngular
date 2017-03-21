@@ -18,15 +18,18 @@
 			controller: ['$scope', '$attrs', '$element', '$location',
 				function($scope, $attrs, $element, $location) {
 					console.log('$attrs', $attrs);
-					$scope.$on('$routeChangeStart', function(next, current) {
+					var refresh = function(next, current) {
 						var url = $attrs.href;
-						var path = '#' + $location.path();
+						var path = '.' + $location.path();
+						console.log('path', path);
 						if (url === path) {
 							$element.addClass('active');
 						} else {
 							$element.removeClass('active');
 						}
-					});
+					}
+					$scope.$on('$routeChangeStart', refresh);
+					refresh();
 				}
 			]
 		};
