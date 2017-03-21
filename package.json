@@ -1,0 +1,22 @@
+{
+  "name": "exo",
+  "version": "0.0.1",
+  "description": "exo angular orsys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Jean-Louis GUENEGO",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "3.18.0",
+    "eslint-config-google": "0.7.1"
+  },
+  "dependencies": {
+    "angular": "1.6.3",
+    "angular-route": "1.6.3"
+  }
+}
