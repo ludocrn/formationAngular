@@ -20,7 +20,7 @@ app.use('/app/', function(req, res, next) {
 });
 
 app.use(function(req, res, next) {
-	console.log('404: Page not Found', req.url);
+	console.log('404: Page non trouvee!!', req.url);
 	next();
 });
 
